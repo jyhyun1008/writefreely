@@ -98,7 +98,7 @@ func (ru *RemoteUser) AsPerson() *activitystreams.Person {
 		Icon: activitystreams.Image {
 			Type: "Image",
 			MediaType: "image/png",
-			Url: ru.Icon,
+			URL: ru.Icon,
 			},
 	}
 }
