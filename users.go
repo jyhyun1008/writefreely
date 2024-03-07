@@ -71,6 +71,7 @@ type (
 		Email      zero.String `json:"email"`
 		Created    time.Time   `json:"created"`
 		Status     UserStatus  `json:"status"`
+		icon       string      `json:"icon"`
 
 		clearEmail string `json:"email"`
 	}
