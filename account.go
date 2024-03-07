@@ -166,6 +166,7 @@ func signupWithRegistration(app *App, signup userRegistration, w http.ResponseWr
 		HasPass:    true,
 		Email:      prepareUserEmail(signup.Email, app.keys.EmailKey),
 		Created:    time.Now().Truncate(time.Second).UTC(),
+		Icon:       "https://peachtart2.s3.ap-northeast-1.amazonaws.com/tart/9652e6f0-0362-4b06-a5f7-8e49e8955317.png",
 	}
 
 	// Create actual user
