@@ -95,7 +95,11 @@ func (ru *RemoteUser) AsPerson() *activitystreams.Person {
 		Endpoints: activitystreams.Endpoints{
 			SharedInbox: ru.SharedInbox,
 		},
-		Icon: ru.Icon,
+		Icon: {
+			Type: "Image",
+			MediaType: "image/png",
+			Url: ru.Icon,
+			},
 	}
 }
 
