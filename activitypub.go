@@ -65,6 +65,7 @@ type RemoteUser struct {
 	SharedInbox string
 	URL         string
 	Handle      string
+	Icon        string
 	Created     time.Time
 }
 
@@ -94,6 +95,7 @@ func (ru *RemoteUser) AsPerson() *activitystreams.Person {
 		Endpoints: activitystreams.Endpoints{
 			SharedInbox: ru.SharedInbox,
 		},
+		Icon: ru.Icon,
 	}
 }
 
